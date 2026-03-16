@@ -6,7 +6,7 @@ export default defineConfig({
   description: "Dokumentacja skryptów FiveM",
 
   head: [
-      ['link', { rel: 'icon', href: '/favicon.png' }]
+      ['link', { rel: 'icon', href: '/pixi/favicon.png' }]
   ],
   
   // TO JEST KLUCZOWE DLA GITHUB PAGES:
