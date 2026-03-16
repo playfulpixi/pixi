@@ -13,8 +13,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      # Instalujemy zależności
       - run: npm install
-      - run: npm run docs:build
+      # Budujemy stronę - jeśli to wyrzuci błąd 127, to znaczy że 'docs:build' 
+      # nie istnieje w Twoim package.json
+      - run: npm run docs:build 
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .vitepress/dist
